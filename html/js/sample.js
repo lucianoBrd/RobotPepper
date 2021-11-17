@@ -50,16 +50,6 @@
         raise('Example/Button1', 1)
     });
 
-    $('#page_1_2').on('click', function() {
-        console.log("click 2");
-        raise('Example/Button2', 1)
-    });
-
-    $('#page_1_3').on('click', function() {
-        console.log("click 3");
-        raise('Example/Button3', 1)
-    });
-
     $('#red').on('click', function() {
         console.log("click red");
         raise('Example/Red', 1)
