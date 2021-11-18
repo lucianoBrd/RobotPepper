@@ -1,5 +1,5 @@
-topic: ~phase1()
-language: enu
+topic: ~stop()
+language: frf
 
 # Defining extra concepts out of words or group of words
 #concept:(hello) [hello hi hey "good morning" greetings]
@@ -9,3 +9,5 @@ language: enu
 
 # Replying to speech
 #u:(~hello) ~hello
+
+u:([Stop e:Stop/Button]) $onStopped=1

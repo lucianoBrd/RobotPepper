@@ -1,0 +1,8 @@
+topic: ~salutation()
+language: frf
+
+u:(e:onStart) $Home=1  Bienvenue messieurs dames $Hello=1
+
+u:([Bonjour e:Hello/Button]) $Joke=1 Bonjour mon amigo dingo $onStopped=1
+
+u:([Mistoufle e:Example/Button1]) $Example/Page0=1 C'est parti pour la fete $onStopped=1

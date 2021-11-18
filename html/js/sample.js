@@ -1,29 +1,43 @@
 ﻿$(document).ready(function () {
     session = new QiSession();
 
-    $('#page_empty').show();
-    $('#page_1').hide();
-    $('#page_2').hide();
+    $('#home').show();
+    $('#hello').hide();
+    $('#page_joke').hide();
+    $('#joke').hide();
 
 
     session.service("ALMemory").done(function(ALMemory) {
 
-        ALMemory.subscriber("Example/Page0").done(function(subscriber) {
+        ALMemory.subscriber("Home").done(function(subscriber) {
 
             subscriber.signal.connect(function() {
-                $('#page_empty').show();
-                $('#page_1').hide();
-                $('#page_joke_question').hide();
+                $('#home').show();
+                $('#hello').hide();
+                $('#joke').hide();
+                $('#page_joke').hide();
             });
         });
 
 
-        ALMemory.subscriber("Example/Page1").done(function(subscriber) {
+        ALMemory.subscriber("Hello").done(function(subscriber) {
 
             subscriber.signal.connect(function() {
-                $('#page_1').show();
-                $('#page_empty').hide();
-                $('#page_joke_question').hide();
+                $('#hello').show();
+                $('#home').hide();
+                $('#joke').hide();
+                $('#page_joke').hide();
+
+            });
+        });
+
+        ALMemory.subscriber("Joke").done(function(subscriber) {
+
+            subscriber.signal.connect(function() {
+                $('#joke').show();
+                $('#home').hide();
+                $('#hello').hide();
+                $('#page_joke').hide();
 
             });
         });
@@ -32,8 +46,9 @@
 
             subscriber.signal.connect(function(data) {
                 $('#page_joke').show();
-                $('#page_empty').hide();
-                $('#page_1').hide();
+                $('#home').hide();
+                $('#hello').hide();
+                $('#joke').hide();
 
                 $('#joke_answer').html("");
                 $('#joke_question').html(data);
@@ -44,8 +59,9 @@
 
             subscriber.signal.connect(function(data) {
                 $('#page_joke').show();
-                $('#page_empty').hide();
-                $('#page_1').hide();
+                $('#home').hide();
+                $('#hello').hide();
+                $('#joke').hide();
 
                 $('#joke_answer').html(data);
             });
@@ -58,9 +74,16 @@
         });
     }
 
-    $('#page_1_1').on('click', function() {
-        console.log("click 1");
-        raise('Example/Button1', 1)
+    $('#hello_button').on('click', function() {
+        raise('Hello/Button', 1)
+    });
+
+    $('#joke_button').on('click', function() {
+        raise('Joke/Button', 1)
+    });
+
+    $('#stop_button').on('click', function() {
+        raise('Stop/Button', 1)
     });
 
 });
