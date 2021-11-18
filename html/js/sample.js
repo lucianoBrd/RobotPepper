@@ -13,7 +13,7 @@
             subscriber.signal.connect(function() {
                 $('#page_empty').show();
                 $('#page_1').hide();
-                $('#page_2').hide();
+                $('#page_joke_question').hide();
             });
         });
 
@@ -23,17 +23,31 @@
             subscriber.signal.connect(function() {
                 $('#page_1').show();
                 $('#page_empty').hide();
-                $('#page_2').hide();
+                $('#page_joke_question').hide();
 
             });
         });
 
-        ALMemory.subscriber("Example/Page2").done(function(subscriber) {
+        ALMemory.subscriber("Joke/Question").done(function(subscriber) {
 
-            subscriber.signal.connect(function() {
-                $('#page_2').show();
+            subscriber.signal.connect(function(data) {
+                $('#page_joke').show();
                 $('#page_empty').hide();
                 $('#page_1').hide();
+
+                $('#joke_answer').html("");
+                $('#joke_question').html(data);
+            });
+        });
+
+        ALMemory.subscriber("Joke/Answer").done(function(subscriber) {
+
+            subscriber.signal.connect(function(data) {
+                $('#page_joke').show();
+                $('#page_empty').hide();
+                $('#page_1').hide();
+
+                $('#joke_answer').html(data);
             });
         });
     });
@@ -44,26 +58,9 @@
         });
     }
 
-
     $('#page_1_1').on('click', function() {
         console.log("click 1");
         raise('Example/Button1', 1)
     });
-
-    $('#red').on('click', function() {
-        console.log("click red");
-        raise('Example/Red', 1)
-    });
-
-    $('#blue').on('click', function() {
-        console.log("click blue");
-        raise('Example/Blue', 1)
-    });
-
-    $('#yellow').on('click', function() {
-        console.log("click yellow");
-        raise('Example/Yellow', 1)
-    });
-
 
 });

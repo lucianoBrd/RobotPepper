@@ -10,4 +10,4 @@ language: frf
 # Replying to speech
 #u:(~hello) ~hello
 
-u:(e:onStart) $JokeAnswer $onStopped=1
+u:(e:onStart) $Joke/Answer=$JokeAnswer $JokeAnswer $onStopped=1
