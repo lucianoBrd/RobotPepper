@@ -59,7 +59,7 @@ def main():
 
     s = app.session
     my_module = JokeModule(s)
-    s.registerService("joke", my_module)
+    s.registerService("Joke", my_module)
 
     app.run()
 

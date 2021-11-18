@@ -6,6 +6,7 @@
     </BehaviorDescriptions>
     <Dialogs>
         <Dialog name="phase1" src="phase1/phase1.dlg" />
+        <Dialog name="joke" src="joke/joke.dlg" />
     </Dialogs>
     <Resources>
         <File name="index" src="html/index.html" />
@@ -19,10 +20,12 @@
         <File name="04_script_module_almemory_connect" src="scripts/04_script_module_almemory_connect.py" />
         <File name="05_script_module_web_api" src="scripts/05_script_module_web_api.py" />
         <File name="music_all" src="sounds/music_all.ogg" />
+        <File name="api_joke" src="scripts/api_joke.py" />
     </Resources>
     <Topics>
         <Topic name="phase1_enu" src="phase1/phase1_enu.top" topicName="phase1" language="en_US" />
         <Topic name="phase1_frf" src="phase1/phase1_frf.top" topicName="phase1" language="fr_FR" />
+        <Topic name="joke_frf" src="joke/joke_frf.top" topicName="joke" language="fr_FR" />
     </Topics>
     <IgnoredPaths>
         <Path src=".metadata" />
