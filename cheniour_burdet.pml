@@ -6,7 +6,8 @@
     </BehaviorDescriptions>
     <Dialogs>
         <Dialog name="phase1" src="phase1/phase1.dlg" />
-        <Dialog name="joke" src="joke/joke.dlg" />
+        <Dialog name="jokeQuestion" src="jokeQuestion/jokeQuestion.dlg" />
+        <Dialog name="jokeAnswer" src="jokeAnswer/jokeAnswer.dlg" />
     </Dialogs>
     <Resources>
         <File name="index" src="html/index.html" />
@@ -25,7 +26,8 @@
     <Topics>
         <Topic name="phase1_enu" src="phase1/phase1_enu.top" topicName="phase1" language="en_US" />
         <Topic name="phase1_frf" src="phase1/phase1_frf.top" topicName="phase1" language="fr_FR" />
-        <Topic name="joke_frf" src="joke/joke_frf.top" topicName="joke" language="fr_FR" />
+        <Topic name="jokeQuestion_frf" src="jokeQuestion/jokeQuestion_frf.top" topicName="jokeQuestion" language="fr_FR" />
+        <Topic name="jokeAnswer_frf" src="jokeAnswer/jokeAnswer_frf.top" topicName="jokeAnswer" language="fr_FR" />
     </Topics>
     <IgnoredPaths>
         <Path src=".metadata" />

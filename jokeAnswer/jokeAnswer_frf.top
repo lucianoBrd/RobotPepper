@@ -1,4 +1,4 @@
-topic: ~joke()
+topic: ~jokeAnswer()
 language: frf
 
 # Defining extra concepts out of words or group of words
@@ -10,4 +10,4 @@ language: frf
 # Replying to speech
 #u:(~hello) ~hello
 
-u:(e:onStart) Ecoute moi bien fils  $Joke $onStopped=1
+u:(e:onStart) $JokeAnswer $onStopped=1
