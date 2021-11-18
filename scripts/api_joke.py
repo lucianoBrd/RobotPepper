@@ -8,7 +8,7 @@
 import qi
 import requests
 
-class WeatherModule:
+class JokeModule:
     """
     Wow, there should be some doc here too
     """
@@ -19,8 +19,7 @@ class WeatherModule:
         self.session = session
         self.memory = self.session.service("ALMemory")
 
-        self.url = "http://api.openweathermap.org/data/2.5/weather?id=6454573&APPID=49b584e311c58fa09794e5e25a19d1af&UNITS=metric"
-        print "MyModule fin init"
+        self.url = "https://blague.xyz/api/joke/random"
 
     def __del__(self):
         """
@@ -28,34 +27,26 @@ class WeatherModule:
         pass
 
 
-    def print_weather(self):
+    def print_joke(self):
         """
         """
         info = requests.get(self.url)
 
         info_json = info.json()
-        #print "info_json: %s" % info_json
+        print "info_json: %s" % info_json
 
-    def get_temperature(self):
+    def get_joke(self):
         """
-        TODO
-
-        **return (float) :**
-           * temperature (in degrees)
+        **return (string) :**
+           * joke
         """
         info = requests.get(self.url)
 
         info_json = info.json()
-        main_info = info_json["main"]
-        #print "main_info: %s" % main_info
+        main_info = info_json["joke"]["question"] + "/" + info_json["joke"]["answer"]
+        print "main_info: %s" % main_info
 
-        temperature_kelvins = main_info["temp"]
-        temperature_degrees = temperature_kelvins - 273.15
-
-        #print "temperature: % s" % temperature_degrees
-        return temperature_degrees
-
-
+        return main_info
 
 
 def main():
@@ -67,8 +58,8 @@ def main():
     app.start()
 
     s = app.session
-    my_module = WeatherModule(s)
-    s.registerService("Weather", my_module)
+    my_module = JokeModule(s)
+    s.registerService("joke", my_module)
 
     app.run()
 

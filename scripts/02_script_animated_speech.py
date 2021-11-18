@@ -3,7 +3,7 @@
 
 import qi
 
-robot_ip = "192.168.1.201"
+robot_ip = "134.214.50"
 
 def main():
     """
