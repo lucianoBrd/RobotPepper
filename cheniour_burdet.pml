@@ -24,6 +24,9 @@
         <File name="05_script_module_web_api" src="scripts/05_script_module_web_api.py" />
         <File name="music_all" src="sounds/music_all.ogg" />
         <File name="api_joke" src="scripts/api_joke.py" />
+        <File name="Algorithme" src="Algorithme.PNG" />
+        <File name="aou" src="sounds/aou.ogg" />
+        <File name="quoi" src="sounds/quoi.ogg" />
     </Resources>
     <Topics>
         <Topic name="jokeQuestion_frf" src="jokeQuestion/jokeQuestion_frf.top" topicName="jokeQuestion" language="fr_FR" />
