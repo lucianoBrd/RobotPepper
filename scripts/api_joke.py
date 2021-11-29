@@ -3,7 +3,7 @@
 
 # ssh nao@pepper01
 # export PYTHONPATH=${PYTHONPATH}:/softwares/INFO/Pepper/pynaoqi-python2.7-2.5.5.5-linux64/lib/python2.7/site-packages
-# run with python 03_...py --qi-url="tcp://ip_robot:9559"
+# run with python2 scripts/api_joke.py
 
 import qi
 import requests

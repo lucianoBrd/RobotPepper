@@ -17,16 +17,12 @@
         <File name="sample" src="html/js/sample.js" />
         <File name="sample" src="html/js/sample.js~" />
         <File name="index" src="html/index.html~" />
-        <File name="01_script_hello" src="scripts/01_script_hello.py" />
-        <File name="02_script_animated_speech" src="scripts/02_script_animated_speech.py" />
-        <File name="03_script_my_module" src="scripts/03_script_my_module.py" />
-        <File name="04_script_module_almemory_connect" src="scripts/04_script_module_almemory_connect.py" />
-        <File name="05_script_module_web_api" src="scripts/05_script_module_web_api.py" />
         <File name="music_all" src="sounds/music_all.ogg" />
         <File name="api_joke" src="scripts/api_joke.py" />
         <File name="Algorithme" src="Algorithme.PNG" />
         <File name="aou" src="sounds/aou.ogg" />
         <File name="quoi" src="sounds/quoi.ogg" />
+        <File name="readme" src="readme.md" />
     </Resources>
     <Topics>
         <Topic name="jokeQuestion_frf" src="jokeQuestion/jokeQuestion_frf.top" topicName="jokeQuestion" language="fr_FR" />
