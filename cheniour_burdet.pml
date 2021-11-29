@@ -23,6 +23,8 @@
         <File name="aou" src="sounds/aou.ogg" />
         <File name="quoi" src="sounds/quoi.ogg" />
         <File name="readme" src="readme.md" />
+        <File name="diagram" src="diagram.pdf" />
+        <File name="diagram" src="diagram.png" />
     </Resources>
     <Topics>
         <Topic name="jokeQuestion_frf" src="jokeQuestion/jokeQuestion_frf.top" topicName="jokeQuestion" language="fr_FR" />
