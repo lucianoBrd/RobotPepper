@@ -3,6 +3,8 @@
 * Aykel Cheniour
 * Lucien Burdet
 
+## Vidéo
+
 ## Procédure de lancement 
 
 Avant de lancer le projet sur le robot, il faut d'abord lancer le service permettant de requêter l'API de blague.
@@ -17,9 +19,9 @@ Une fois le service lancé, vous pouvez lancer le progamme sur le robot avec l'a
 ## Partie éthique
 
 Nous avons essayé de respecter l'éthique avec le robot Pepper. 
-En effet, notre solution permet au robot d'accueilir et de raconter des blagues en tout genre. Le robot parle et ce qu'il dit est également écrit sur la tablette, ce qui permet aux personnes mal entendente de pouvoir profiter de ces services. De plus, le robot peut reconnaitre la voix, mais il est également possible d'appuyer sur la tablette pour effectuer les mêmes actions. De ce fait, les personnes ne pouvant pas parler ne sont pas discréminés.
+En effet, notre solution permet au robot d'accueillir et de raconter des blagues en tous genres. Le robot parle et ce qu'il dit est également écrit sur la tablette, ce qui permet aux personnes mal entendente se pouvoir profiter de ces services. De plus, le robot peut reconnaitre la voix, mais il est également possible d'appuyer sur la tablette pour effectuer les mêmes actions. De ce fait, les personnes ne pouvant pas parler ne sont pas discriminées.
 
-En revanche, notre robot peut également effectuer des fonctionnalités cachés d'humour, en touchant sa tête, ou ses mains par exemple. Mais, les personnes en situation d'handicap ne peuvent pas profiter des ces fonctionnalités. Une question d'hétique peut alors être soulevée.
-De plus, le robot prend une photo après avoir racconté sa blague afin de l'afficher sur la tablette. Il fait cela sans le consentement de l'utilisateur. En outre, au vue du niveau de sécurité médiocre du robot, une personne mal intentionnée pourrait récupérer ces photos.
+En revanche, notre robot peut également effectuer des fonctionnalités cachées d'humour, en touchant sa tête, ou ses mains par exemple. Mais, les personnes en situation d'handicap ne peuvent pas profiter de ces fonctionnalités. Une question d'Hétique peut alors être soulevée.
+De plus, le robot prend une photo après avoir raconté sa blague afin de l'afficher sur la tablette. Il fait cela sans le consentement de l'utilisateur. En outre, aux vues du niveau de sécurité médiocre du robot, une personne mal intentionnée pourrait récupérer ces photos.
 
-De plus nous n'avons aucun controle sur les blague recupérer sur l'API. Cela peux etre un problème car le robot ne fait pas la différence entre un adulte ou un enfants et peux donc dire des chose inapproprier pour des enfants. L'utilisation du robot par des enfant pose donc un problèmes éthique notament dans la protection des enfants a l'exposition de propos choquant.
+De plus nous n'avons aucun contrôle sur les blagues récupérées sur l'API. Cela peut être un problème car le robot ne fait pas la différence entre un adulte ou un enfant et peut donc dire des choses inappropriées pour des enfants. L'utilisation du robot par des enfants pose donc un problème éthique notamment dans la protection des enfants à l'exposition de propos choquant.
