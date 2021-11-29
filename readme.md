@@ -4,6 +4,8 @@
 * Lucien Burdet
 
 ## Vidéo
+- https://youtu.be/Nv9qDqoH9XM
+- https://youtu.be/8IebyIv7y70
 
 ## Procédure de lancement 
 
