@@ -10,4 +10,4 @@ language: frf
 # Replying to speech
 #u:(~hello) ~hello
 
-u:([Stop e:Stop/Button]) $onStopped=1
+u:([Extinction  e:Stop/Button]) $onStopped=1
