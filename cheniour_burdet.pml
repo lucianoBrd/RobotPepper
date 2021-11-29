@@ -31,9 +31,7 @@
         <Topic name="joke_frf" src="joke/joke_frf.top" topicName="joke" language="fr_FR" />
         <Topic name="stop_frf" src="stop/stop_frf.top" topicName="stop" language="fr_FR" />
     </Topics>
-    <IgnoredPaths>
-        <Path src=".metadata" />
-    </IgnoredPaths>
+    <IgnoredPaths />
     <Translations auto-fill="fr_FR">
         <Translation name="translation_fr_FR" src="translations/translation_fr_FR.ts" language="fr_FR" />
     </Translations>

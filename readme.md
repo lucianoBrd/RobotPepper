@@ -14,4 +14,12 @@ python2 scripts/api_joke.py
 
 Une fois le service lancé, vous pouvez lancer le progamme sur le robot avec l'application Choregraphe.
 
-## Partie non éthique
+## Partie éthique
+
+Nous avons essayé de respecter l'éthique avec le robot Pepper. 
+En effet, notre solution permet au robot d'accueilir et de raconter des blagues en tout genre. Le robot parle et ce qu'il dit est également écrit sur la tablette, ce qui permet aux personnes mal entendente de pouvoir profiter de ces services. De plus, le robot peut reconnaitre la voix, mais il est également possible d'appuyer sur la tablette pour effectuer les mêmes actions. De ce fait, les personnes ne pouvant pas parler ne sont pas discréminés.
+
+En revanche, notre robot peut également effectuer des fonctionnalités cachés d'humour, en touchant sa tête, ou ses mains par exemple. Mais, les personnes en situation d'handicap ne peuvent pas profiter des ces fonctionnalités. Une question d'hétique peut alors être soulevée.
+De plus, le robot prend une photo après avoir racconté sa blague afin de l'afficher sur la tablette. Il fait cela sans le consentement de l'utilisateur. En outre, au vue du niveau de sécurité médiocre du robot, une personne mal intentionnée pourrait récupérer ces photos.
+
+De plus nous n'avons aucun controle sur les blague recupérer sur l'API. Cela peux etre un problème car le robot ne fait pas la différence entre un adulte ou un enfants et peux donc dire des chose inapproprier pour des enfants. L'utilisation du robot par des enfant pose donc un problèmes éthique notament dans la protection des enfants a l'exposition de propos choquant.
